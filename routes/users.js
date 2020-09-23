@@ -4,5 +4,6 @@ var UserController = require('../controllers/UserController');
 
 router.post('/signup', UserController.signup);
 router.post('/login', UserController.login);
+router.get('/getAllSellers', UserController.getAllSellers);
 
 module.exports = router;

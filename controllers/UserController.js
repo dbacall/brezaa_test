@@ -57,6 +57,12 @@ var UserController = {
       });
     });
   },
+
+  getAllSellers: (req, res) => {
+    User.find({ typeOfUser: 'seller' }).then((users) => {
+      res.json(users);
+    });
+  },
 };
 
 module.exports = UserController;

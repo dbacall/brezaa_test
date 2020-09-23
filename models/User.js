@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema({
   },
   profession: {
     type: String,
-    required: true,
+    default: '',
   },
   longitude: {
     type: Number,
